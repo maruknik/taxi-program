@@ -1,0 +1,50 @@
+"""
+Serializers for notifications app.
+"""
+
+from rest_framework import serializers
+from apps.notifications.models import Notification, Device, NotificationPreference
+
+
+class NotificationSerializer(serializers.ModelSerializer):
+    """Serializer for Notification model."""
+    class Meta:
+        model = Notification
+        fields = [
+            'id', 'notification_type', 'title', 'message',
+            'data', 'is_read', 'read_at', 'created_at',
+        ]
+        read_only_fields = fields
+
+
+class DeviceSerializer(serializers.ModelSerializer):
+    """Serializer for Device model."""
+    class Meta:
+        model = Device
+        fields = [
+            'id', 'device_type', 'registration_id', 'fcm_token', 'is_active',
+            'device_name', 'device_model', 'os_version', 'app_version', 'created_at'
+        ]
+        read_only_fields = ['id', 'is_active', 'created_at']
+
+
+class RegisterDeviceSerializer(serializers.Serializer):
+    """Serializer for registering a new device."""
+    registration_id = serializers.CharField(required=True, min_length=10)
+    type = serializers.ChoiceField(choices=Device.DeviceType.choices)
+    active = serializers.BooleanField(default=True)
+    device_name = serializers.CharField(required=False, allow_blank=True)
+    device_model = serializers.CharField(required=False, allow_blank=True)
+    os_version = serializers.CharField(required=False, allow_blank=True)
+    app_version = serializers.CharField(required=False, allow_blank=True)
+
+
+class NotificationPreferenceSerializer(serializers.ModelSerializer):
+    """Serializer for NotificationPreference model."""
+    class Meta:
+        model = NotificationPreference
+        fields = [
+            'id', 'ride_notifications', 'payment_notifications',
+            'promo_notifications', 'push_enabled', 'email_enabled',
+        ]
+        read_only_fields = ['id']

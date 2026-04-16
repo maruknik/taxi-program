@@ -1,0 +1,44 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done"
+  },
+  "profile": {
+    "title": "Profile",
+    "personalInfo": "Personal Info",
+    "savedAddresses": "Saved Addresses",
+    "language": "Language",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "logout": "Logout"
+  },
+  "language": {
+    "title": "Language",
+    "searchPlaceholder": "Your language",
+    "changeLanguage": "Change Language",
+    "languageChanged": "Language changed to {{language}}"
+  },
+  "rides": {
+    "title": "Rides",
+    "history": "Ride History",
+    "currentRide": "Current Ride",
+    "noRides": "No rides yet"
+  },
+  "payment": {
+    "title": "Payment",
+    "methods": "Payment Methods",
+    "addCard": "Add Card",
+    "cash": "Cash"
+  }
+}

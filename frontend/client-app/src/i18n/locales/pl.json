@@ -1,0 +1,44 @@
+{
+  "common": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "add": "Dodaj",
+    "search": "Szukaj",
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces",
+    "confirm": "Potwierdź",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "done": "Gotowe"
+  },
+  "profile": {
+    "title": "Profil",
+    "personalInfo": "Dane osobiste",
+    "savedAddresses": "Zapisane adresy",
+    "language": "Język",
+    "changePassword": "Zmień hasło",
+    "deleteAccount": "Usuń konto",
+    "logout": "Wyloguj"
+  },
+  "language": {
+    "title": "Język",
+    "searchPlaceholder": "Twój język",
+    "changeLanguage": "Zmień język",
+    "languageChanged": "Język zmieniony na {{language}}"
+  },
+  "rides": {
+    "title": "Przejazdy",
+    "history": "Historia przejazdów",
+    "currentRide": "Bieżący przejazd",
+    "noRides": "Brak przejazdów"
+  },
+  "payment": {
+    "title": "Płatność",
+    "methods": "Metody płatności",
+    "addCard": "Dodaj kartę",
+    "cash": "Gotówka"
+  }
+}
