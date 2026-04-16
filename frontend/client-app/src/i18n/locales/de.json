@@ -1,0 +1,44 @@
+{
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "search": "Suchen",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "confirm": "Bestätigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "done": "Fertig"
+  },
+  "profile": {
+    "title": "Profil",
+    "personalInfo": "Persönliche Daten",
+    "savedAddresses": "Gespeicherte Adressen",
+    "language": "Sprache",
+    "changePassword": "Passwort ändern",
+    "deleteAccount": "Konto löschen",
+    "logout": "Abmelden"
+  },
+  "language": {
+    "title": "Sprache",
+    "searchPlaceholder": "Ihre Sprache",
+    "changeLanguage": "Sprache ändern",
+    "languageChanged": "Sprache geändert zu {{language}}"
+  },
+  "rides": {
+    "title": "Fahrten",
+    "history": "Fahrtenverlauf",
+    "currentRide": "Aktuelle Fahrt",
+    "noRides": "Noch keine Fahrten"
+  },
+  "payment": {
+    "title": "Zahlung",
+    "methods": "Zahlungsmethoden",
+    "addCard": "Karte hinzufügen",
+    "cash": "Bargeld"
+  }
+}

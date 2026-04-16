@@ -1,0 +1,14 @@
+WARNING 2026-04-15 19:26:26,060 matching_service 1 134791434720000 No driver found for ride ebdf5544-c222-4f09-968c-bcd51729bdb1
+WARNING 2026-04-15 19:26:36,116 matching_service 1 134791434720000 No driver found for business at (49.390806568991344, 27.04861644655466)
+WARNING 2026-04-15 19:26:36,117 matching_service 1 134791434720000 No driver found for ride ebdf5544-c222-4f09-968c-bcd51729bdb1
+WARNING 2026-04-15 19:26:46,170 matching_service 1 134791434720000 No driver found for business at (49.390806568991344, 27.04861644655466)
+WARNING 2026-04-15 19:26:46,171 matching_service 1 134791434720000 No driver found for ride ebdf5544-c222-4f09-968c-bcd51729bdb1
+WARNING 2026-04-15 19:27:44,093 matching_service 1 134791434720000 No driver found for comfort at (49.39105884211111, 27.04875759780407)
+WARNING 2026-04-15 19:27:44,093 matching_service 1 134791434720000 No driver found for ride f767e560-35f9-499f-80b1-5362c2fb8c74
+WARNING 2026-04-15 19:27:54,134 matching_service 1 134791434720000 No driver found for comfort at (49.39105884211111, 27.04875759780407)
+WARNING 2026-04-15 19:27:54,135 matching_service 1 134791434720000 No driver found for ride f767e560-35f9-499f-80b1-5362c2fb8c74
+WARNING 2026-04-15 19:28:04,187 matching_service 1 134791434720000 No driver found for comfort at (49.39105884211111, 27.04875759780407)
+WARNING 2026-04-15 19:28:04,187 matching_service 1 134791434720000 No driver found for ride f767e560-35f9-499f-80b1-5362c2fb8c74
+INFO 2026-04-15 19:30:00,036 tasks 1 134791434720000 Cancelled 0 timeout rides
+INFO 2026-04-15 19:30:00,067 tasks 1 134791434720000 Cleaned up 0 stale driver locations
+INFO 2026-04-15 19:35:00,039 tasks 1 134791434720000 Cancelled 0 timeout rides

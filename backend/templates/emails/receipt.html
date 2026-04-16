@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Чек за поїздку</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .logo { font-size: 24px; font-weight: bold; color: #6B38FB; }
+        .receipt-info { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .route-info { margin-bottom: 20px; }
+        .payment-info { background: #e8f5e8; padding: 15px; border-radius: 8px; }
+        .footer { text-align: center; margin-top: 30px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">{{ receipt.company.name }}</div>
+            <p>{{ receipt.company.address }}</p>
+        </div>
+
+        <div class="receipt-info">
+            <h2>Чек №{{ receipt.receipt_id }}</h2>
+            <p><strong>Дата:</strong> {{ receipt.date|date:"d.m.Y H:i" }}</p>
+            <p><strong>Пасажир:</strong> {{ receipt.user.name }}</p>
+        </div>
+
+        <div class="route-info">
+            <h3>Маршрут</h3>
+            <p><strong>Від:</strong> {{ receipt.route.pickup_address }}</p>
+            <p><strong>До:</strong> {{ receipt.route.dropoff_address }}</p>
+            <p><strong>Відстань:</strong> {{ receipt.route.distance_km }} км</p>
+            <p><strong>Час:</strong> {{ receipt.route.duration_minutes }} хв</p>
+        </div>
+
+        {% if receipt.driver %}
+        <div class="driver-info">
+            <h3>Водій</h3>
+            <p><strong>Ім'я:</strong> {{ receipt.driver.name }}</p>
+            <p><strong>Автомобіль:</strong> {{ receipt.driver.vehicle }}</p>
+            <p><strong>Номер:</strong> {{ receipt.driver.plate }}</p>
+        </div>
+        {% endif %}
+
+        <div class="payment-info">
+            <h3>Оплата</h3>
+            <p><strong>Спосіб:</strong> {{ receipt.payment.method }}</p>
+            <p><strong>Сума:</strong> {{ receipt.payment.amount }} {{ receipt.payment.currency }}</p>
+        </div>
+
+        <div class="footer">
+            <p>Дякуємо за користування {{ receipt.company.name }}!</p>
+            <p>{{ receipt.company.website }}</p>
+        </div>
+    </div>
+</body>
+</html>
